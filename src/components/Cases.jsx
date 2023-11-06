@@ -1,4 +1,5 @@
 import React from 'react'
+import IMAGES from '../images/Images'
 
 function Cases() {
   return (
@@ -9,7 +10,8 @@ function Cases() {
                   <div className="justify-center items-center bg-blue-500 self-center flex w-12 max-w-full flex-col my-auto p-3 rounded-md">
                     <img
                       loading="lazy"
-                      src=""
+                      src={IMAGES.image5}
+                       alt={"logo"}
                       className="aspect-square object-contain object-center w-full overflow-hidden self-stretch"
                     />
                   </div>
@@ -24,7 +26,8 @@ function Cases() {
                       <div className="items-start flex gap-0 mt-3 self-start">
                         <img
                           loading="lazy"
-                          src=""
+                          src={IMAGES.image8}
+                    alt={"logo"}
                           className="aspect-square object-contain object-center w-full overflow-hidden flex-1"
                         />
                         <div className="text-emerald-600 text-sm font-semibold leading-5 self-stretch whitespace-nowrap">
@@ -46,7 +49,8 @@ function Cases() {
                         <div className="justify-center items-center bg-red-500 self-center flex w-12 max-w-full flex-col my-auto p-3 rounded-md">
                           <img
                             loading="lazy"
-                            src=""
+                            src={IMAGES.image6}
+                            alt={"logo"}
                             className="aspect-square object-contain object-center w-full overflow-hidden self-stretch"
                           />
                         </div>
@@ -61,7 +65,8 @@ function Cases() {
                             <div className="items-start flex gap-0 mt-3 self-start">
                               <img
                                 loading="lazy"
-                                src=""
+                                src={IMAGES.image8}
+                              alt={"logo"}
                                 className="aspect-square object-contain object-center w-full overflow-hidden flex-1"
                               />
                               <div className="text-emerald-600 text-sm font-semibold leading-5 self-stretch whitespace-nowrap">
@@ -77,7 +82,8 @@ function Cases() {
                         <div className="justify-center items-center bg-lime-500 self-center flex w-12 max-w-full flex-col my-auto p-3 rounded-md">
                           <img
                             loading="lazy"
-                            src=""
+                            src={IMAGES.image7}
+                            alt={"logo"}
                             className="aspect-square object-contain object-center w-full overflow-hidden self-stretch"
                           />
                         </div>
@@ -92,7 +98,8 @@ function Cases() {
                             <div className="items-start flex gap-0 mt-3 self-start">
                               <img
                                 loading="lazy"
-                                src=""
+                                src={IMAGES.image8}
+                    alt={"logo"}
                                 className="aspect-square object-contain object-center w-full overflow-hidden flex-1"
                               />
                               <div className="text-emerald-600 text-sm font-semibold leading-5 self-stretch whitespace-nowrap">
@@ -109,7 +116,7 @@ function Cases() {
                   <div className="bg-gray-50 flex grow shrink basis-auto items-start justify-between gap-5 flex-1 pl-7 pr-20 py-5 rounded-none max-md:px-5">
                     <div className="self-stretch flex items-start justify-between gap-0.5">
                       <div className="text-gray-500 text-xs font-bold leading-5 uppercase self-start">
-                        MaleS:
+                        Males:
                       </div>
                       <div className="text-zinc-800 text-xs font-medium leading-5 uppercase whitespace-nowrap self-start">
                         <span className="text-black"> 1</span>
@@ -118,7 +125,7 @@ function Cases() {
                     </div>
                     <div className="self-stretch flex items-start justify-between gap-0.5">
                       <div className="text-gray-500 text-xs font-bold leading-5 uppercase self-stretch">
-                        FEMaleS:
+                        Females:
                       </div>
                       <div className="text-gray-500 text-xs font-medium leading-5 uppercase self-stretch whitespace-nowrap">
                         {" "}
@@ -129,7 +136,7 @@ function Cases() {
                   <div className="bg-gray-50 flex grow shrink basis-auto items-start justify-between gap-5 flex-1 pl-7 pr-14 py-5 rounded-none max-md:px-5">
                     <div className="self-stretch flex items-start justify-between gap-2">
                       <div className="text-gray-500 text-xs font-bold leading-5 uppercase self-start">
-                        MaleS:
+                        Males:
                       </div>
                       <div className="text-gray-500 text-xs font-medium leading-5 uppercase whitespace-nowrap self-start">
                         42,054
@@ -137,7 +144,7 @@ function Cases() {
                     </div>
                     <div className="self-stretch flex items-start justify-between gap-2">
                       <div className="text-gray-500 text-xs font-bold leading-5 uppercase self-start">
-                        FEMaleS:
+                        FemaleS:
                       </div>
                       <div className="text-gray-500 text-xs font-medium leading-5 uppercase whitespace-nowrap self-start">
                         51,371
