@@ -1,72 +1,72 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 
-const HighchartTable = () => {
+const HighCharts = () => {
+  const chartRef = useRef(null);
+
   useEffect(() => {
-    
-    const table = document.getElementById('data-table');
-
-    const categories = [];
-    const seriesData = [];
-
-    if (table) {
-      const rows = table.getElementsByTagName('tr');
-      for (let i = 1; i < rows.length; i++) {
-        const cells = rows[i].getElementsByTagName('td');
-        if (cells.length === 2) {
-          categories.push(cells[0].textContent);
-          seriesData.push(parseFloat(cells[1].textContent));
-        }
-      }
-    }
-
-    
-    const chartData = {
-      chart: {
-        type: 'column', // You can use other chart types as needed
-      },
-      title: {
-        text: 'Covid-19 Cases',
-      },
-      xAxis: {
-        categories: categories,
-      },
-      series: [
-        {
-          name: 'Series Name',
-          data: seriesData,
+    if (chartRef.current) {
+      Highcharts.chart(chartRef.current, {
+        chart: {
+          type: 'column',
+          height: 400, 
         },
-      ],
-    };
-
-    //render the Highcharts chart
-    Highcharts.chart('highcharts-container', chartData);
+        title: {
+          text: 'Covid-19 Cases',
+          align: 'left',
+        },
+        subtitle: {
+          text: '',
+          align: 'left',
+        },
+        xAxis: {
+          categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'],
+          crosshair: true,
+          accessibility: {
+            description: 'Months',
+          },
+        },
+        yAxis: {
+          min: 0,
+          max: 2000,
+          title: {
+            text: '',
+          },
+        },
+        tooltip: {
+          valueSuffix: '', 
+        },
+        plotOptions: {
+          column: {
+            pointPadding: 0.2,
+            borderWidth: 0,
+            borderRadius: 5, 
+          },
+        },
+        series: [
+          {
+            name: 'Positive',
+            data: [500, 300, 800, 400, 100, 200, 150, 600, 700, 500, 300, 800], 
+            color: '#D13F4A',
+          },
+          {
+            name: 'Negative',
+            data: [1000, 700, 1700, 600, 350, 350, 650, 1200, 1400, 1000, 700, 2100], 
+            color: '#D2DDEC',
+            
+          },
+        ],
+      });
+    }
   }, []);
 
   return (
     <div>
-      <table id="data-table">
-       
-        <tbody>
-          <tr>
-            <td>Category 1</td>
-            <td>10</td>
-          </tr>
-          <tr>
-            <td>Category 2</td>
-            <td>20</td>
-          </tr>
-          <tr>
-            <td>Category 3</td>
-            <td>20</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div id="highcharts-container"></div>
+      <div ref={chartRef} id="container" />
+      <HighchartsReact highcharts={Highcharts} options={{}} />
     </div>
   );
 };
 
-export default HighchartTable;
+export default HighCharts;
