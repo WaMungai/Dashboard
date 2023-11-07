@@ -58,6 +58,9 @@ function Cases() {
                     <div className="self-stretch text-gray-500 text-sm font-medium leading-5">
                       Positive Cases
                     </div>
+                    <div className="text-gray-900 text-2xl font-semibold leading-8 self-start">
+                      2,450
+                    </div>
                     <div className="items-start self-stretch flex justify-between gap-2 pr-16 max-md:pr-5">
                       <div className="items-start flex gap-0 mt-3 self-start">
                         <img
@@ -68,6 +71,26 @@ function Cases() {
                         />
                         <div className="text-emerald-600 text-sm font-semibold leading-5 self-stretch whitespace-nowrap">
                           5.4%
+                        </div>
+                      </div>
+                    </div>
+                    <div className="bg-gray-50 flex grow shrink basis-auto items-start justify-between gap-5 flex-1 pl-7 pr-20 py-5 rounded-none max-md:px-5">
+                      <div className="self-stretch flex items-start justify-between gap-0.5">
+                        <div className="text-gray-500 text-xs font-bold leading-5 uppercase self-start">
+                          Males:
+                        </div>
+                        <div className="text-zinc-800 text-xs font-medium leading-5 uppercase whitespace-nowrap self-start">
+                          <span className="text-black"> 1</span>
+                          <span className="text-zinc-800">,932</span>
+                        </div>
+                      </div>
+                      <div className="self-stretch flex items-start justify-between gap-0.5">
+                        <div className="text-gray-500 text-xs font-bold leading-5 uppercase self-stretch">
+                          Females:
+                        </div>
+                        <div className="text-gray-500 text-xs font-medium leading-5 uppercase self-stretch whitespace-nowrap">
+                          {" "}
+                          518
                         </div>
                       </div>
                     </div>
@@ -104,47 +127,25 @@ function Cases() {
                         </div>
                       </div>
                     </div>
+                    <div className="bg-gray-50 flex grow shrink basis-auto items-start justify-between gap-5 flex-1 pl-7 pr-14 py-5 rounded-none max-md:px-5">
+                      <div className="self-stretch flex items-start justify-between gap-2">
+                        <div className="text-gray-500 text-xs font-bold leading-5 uppercase self-start">
+                          Males:
+                        </div>
+                        <div className="text-gray-500 text-xs font-medium leading-5 uppercase whitespace-nowrap self-start">
+                          42,054
+                        </div>
+                      </div>
+                      <div className="self-stretch flex items-start justify-between gap-2">
+                        <div className="text-gray-500 text-xs font-bold leading-5 uppercase self-start">
+                          Females:
+                        </div>
+                        <div className="text-gray-500 text-xs font-medium leading-5 uppercase whitespace-nowrap self-start">
+                          51,371
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="self-stretch flex items-start justify-between gap-5 pr-2.5 max-md:max-w-full max-md:flex-wrap">
-            <div className="bg-gray-50 flex grow shrink basis-auto items-start justify-between gap-5 flex-1 pl-7 pr-20 py-5 rounded-none max-md:px-5">
-              <div className="self-stretch flex items-start justify-between gap-0.5">
-                <div className="text-gray-500 text-xs font-bold leading-5 uppercase self-start">
-                  Males:
-                </div>
-                <div className="text-zinc-800 text-xs font-medium leading-5 uppercase whitespace-nowrap self-start">
-                  <span className="text-black"> 1</span>
-                  <span className="text-zinc-800">,932</span>
-                </div>
-              </div>
-              <div className="self-stretch flex items-start justify-between gap-0.5">
-                <div className="text-gray-500 text-xs font-bold leading-5 uppercase self-stretch">
-                  Females:
-                </div>
-                <div className="text-gray-500 text-xs font-medium leading-5 uppercase self-stretch whitespace-nowrap">
-                  {" "}
-                  518
-                </div>
-              </div>
-            </div>
-            <div className="bg-gray-50 flex grow shrink basis-auto items-start justify-between gap-5 flex-1 pl-7 pr-14 py-5 rounded-none max-md:px-5">
-              <div className="self-stretch flex items-start justify-between gap-2">
-                <div className="text-gray-500 text-xs font-bold leading-5 uppercase self-start">
-                  Males:
-                </div>
-                <div className="text-gray-500 text-xs font-medium leading-5 uppercase whitespace-nowrap self-start">
-                  42,054
-                </div>
-              </div>
-              <div className="self-stretch flex items-start justify-between gap-2">
-                <div className="text-gray-500 text-xs font-bold leading-5 uppercase self-start">
-                  Females:
-                </div>
-                <div className="text-gray-500 text-xs font-medium leading-5 uppercase whitespace-nowrap self-start">
-                  51,371
                 </div>
               </div>
             </div>

@@ -1,44 +1,44 @@
-import React, { useEffect } from 'react';
-import Highcharts from 'highcharts/highmaps';
-import HighchartsReact from 'highcharts-react-official';
+import React, { useEffect } from "react";
+import Highcharts from "highcharts/highmaps";
+import HighchartsReact from "highcharts-react-official";
 
 function HighChartMap() {
   useEffect(() => {
     const fetchDataAndInitializeChart = async () => {
       const topologyResponse = await fetch(
-        'https://code.highcharts.com/mapdata/countries/ke/ke-all.topo.json'
+        "https://code.highcharts.com/mapdata/countries/ke/ke-all.topo.json"
       );
       const topology = await topologyResponse.json();
 
       const data = [];
 
-      Highcharts.mapChart('container', {
+      Highcharts.mapChart("container", {
         chart: {
           map: topology,
-          zoomType:'none'
+          zoomType: "none",
         },
         title: {
-          text: '',
+          text: "",
         },
         subtitle: {
-          text: '',
+          text: "",
         },
         mapNavigation: {
           enabled: false,
         },
         rangeSelector: {
-            enabled: false, 
-          },
+          enabled: false,
+        },
         colorAxis: {
           min: 0,
         },
         series: [
           {
             data: data,
-            name: 'Random data',
+            name: "Random data",
             states: {
               hover: {
-                color: '#E5ECF4',
+                color: "#E5ECF4",
               },
             },
             dataLabels: {
@@ -52,7 +52,7 @@ function HighChartMap() {
     fetchDataAndInitializeChart();
   }, []);
 
-  return <div id="container" style={{ width: '100%', height: '500px' }}></div>;
+  return <div id="container" style={{ width: "80%", height: "500px" }}></div>;
 }
 
 export default HighChartMap;
