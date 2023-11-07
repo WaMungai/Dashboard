@@ -19,7 +19,7 @@ function Dashboard() {
         <div className="self-center w-full mt-6 pr-2.5 max-md:max-w-full">
          <Map/>
         </div>
-        <div className="self-center w-full mt-1.5 max-md:max-w-full">
+        <div className="self-center w-full mt-6 pr-2.5 max-md:max-w-full">
           <LabTable />
         </div>
       </div>

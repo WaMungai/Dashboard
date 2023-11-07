@@ -11,6 +11,7 @@ const HighCharts = () => {
         chart: {
           type: 'column',
           height: 400, 
+         
         },
         title: {
           text: 'Covid-19 Cases',
