@@ -15,7 +15,7 @@ function HealthCare() {
           <div className="text-sky-700 text-3xl font-black my-auto">
             Health Care
           </div>
-          <div className="bg-zinc-300 self-stretch w-px h-[114px] grow shrink basis-auto" />
+          <div className="bg-zinc-300 w-px h-[114px] mx-auto max-md:mt-6" />
           <div className="self-center flex flex-col my-auto">
             <div className="text-gray-500 text-sm font-medium leading-5 self-stretch whitespace-nowrap">
               Total Tested

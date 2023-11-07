@@ -1,13 +1,9 @@
 import * as React from "react";
+import HighchartTable from "./HighCharts";
 
 function Graph() {
   return (
     <div className="flex-col justify-center items-center overflow-hidden relative flex min-h-[370px] w-[805px] pl-6 pr-8 max-md:px-5">
-      <img
-        loading="lazy"
-        src=""
-        className="absolute z-[-1] h-full w-full object-cover object-center inset-0"
-      />
       <div className="relative flex w-[291px] max-w-full items-start gap-0 self-start">
         <div className="flex mr-0 flex-col mt-6 self-end">
           <div className="text-slate-800 text-base font-semibold tracking-normal self-stretch whitespace-nowrap">
@@ -62,47 +58,13 @@ function Graph() {
         <div className="text-slate-400 text-sm tracking-normal self-stretch">
           500
         </div>
-        <div className="bg-slate-200 self-center w-[707px] h-px grow shrink basis-auto my-auto max-md:max-w-full" />
+        <div className="bg-white flex grow flex-col w-full mx-auto pt-6 pb-3.5 rounded-lg max-md:max-w-full max-md:mt-10">
+      
+        </div>
+        
       </div>
       <div className="relative bg-slate-200 self-stretch w-full h-px mt-16 max-md:max-w-full max-md:mt-10" />
-      <div className="relative self-center flex w-[623px] max-w-full items-start justify-between gap-5 mt-3.5 mb-7 max-md:flex-wrap max-md:justify-center">
-        <div className="text-slate-400 text-center text-sm tracking-normal self-start">
-          Jan
-        </div>
-        <div className="text-slate-400 text-center text-sm tracking-normal self-start">
-          Feb
-        </div>
-        <div className="text-slate-400 text-center text-sm tracking-normal self-start">
-          Mar
-        </div>
-        <div className="text-slate-400 text-center text-sm tracking-normal self-start">
-          Apr
-        </div>
-        <div className="text-slate-400 text-center text-sm tracking-normal self-start">
-          May
-        </div>
-        <div className="text-slate-400 text-center text-sm tracking-normal self-start">
-          Jun
-        </div>
-        <div className="text-slate-400 text-center text-sm tracking-normal self-start">
-          Jul
-        </div>
-        <div className="text-slate-400 text-center text-sm tracking-normal self-start">
-          Aug
-        </div>
-        <div className="text-slate-400 text-center text-sm tracking-normal self-start">
-          Sep
-        </div>
-        <div className="text-slate-400 text-center text-sm tracking-normal self-start">
-          Oct
-        </div>
-        <div className="text-slate-400 text-center text-sm tracking-normal self-start">
-          Nov
-        </div>
-        <div className="text-slate-400 text-center text-sm tracking-normal whitespace-nowrap self-start">
-          Dec
-        </div>
-      </div>
+      <HighchartTable/>
     </div>
   );
 }

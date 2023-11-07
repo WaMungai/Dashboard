@@ -59,9 +59,7 @@ function Cases() {
                             Positive Cases
                           </div>
                           <div className="items-start self-stretch flex justify-between gap-2 pr-16 max-md:pr-5">
-                            <div className="text-gray-900 text-2xl font-semibold leading-8 self-start">
-                              2,450
-                            </div>
+                           
                             <div className="items-start flex gap-0 mt-3 self-start">
                               <img
                                 loading="lazy"
@@ -99,7 +97,7 @@ function Cases() {
                               <img
                                 loading="lazy"
                                 src={IMAGES.image8}
-                    alt={"logo"}
+                         alt={"logo"}
                                 className="aspect-square object-contain object-center w-full overflow-hidden flex-1"
                               />
                               <div className="text-emerald-600 text-sm font-semibold leading-5 self-stretch whitespace-nowrap">

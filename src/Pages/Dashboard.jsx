@@ -2,8 +2,8 @@ import * as React from "react";
 import BreadCrumbs from "../components/BreadCrumbs";
 import HealthCare from "../components/HealthCare";
 import Cases from "../components/Cases";
-import PositiveCases from "../components/PositiveCases";
-import LabLeaderBoard from "../components/LabLeaderBoard";
+import PositiveCases from "../components/Map";
+import LabTable from "../components/LabTable";
 
 function Dashboard() {
   return (
@@ -20,7 +20,7 @@ function Dashboard() {
          <PositiveCases />
         </div>
         <div className="self-center w-full mt-1.5 max-md:max-w-full">
-          <LabLeaderBoard />
+          <LabTable />
         </div>
       </div>
     </div>

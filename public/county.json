@@ -1,0 +1,47 @@
+[
+  {
+    "county": "Nairobi County",
+    "positiveCases": 20502,
+    "negativeCases": 3304
+  },
+  {
+    "county": "Mombasa County",
+    "positiveCases": 134,
+    "negativeCases": 1994
+  },
+  {
+    "county": "Wajir County",
+    "positiveCases": 245,
+    "negativeCases": 1317
+  },
+  {
+    "county": "Homabay County",
+    "positiveCases": 135,
+    "negativeCases": 522
+  },
+  {
+    "county": "Migori County",
+    "positiveCases": 52,
+    "negativeCases": 134
+  },
+  {
+    "county": "Mandera County",
+    "positiveCases": 424,
+    "negativeCases": 1245
+  },
+  {
+    "county": "Kiambu County",
+    "positiveCases": 2145,
+    "negativeCases": 22983
+  },
+  {
+    "county": "Kajiado County",
+    "positiveCases": 404,
+    "negativeCases": 1385
+  },
+  {
+    "county": "Narok County",
+    "positiveCases": 13,
+    "negativeCases": 152
+  }
+]
