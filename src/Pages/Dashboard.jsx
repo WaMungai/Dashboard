@@ -7,17 +7,17 @@ import Map from "../components/Map";
 
 function Dashboard() {
   return (
-    <div className="bg-slate-200 flex flex-col px-20 max-md:px-5">
+    <div className=" flex flex-col px-20">
       <div className="self-center flex w-full max-w-[1225px] flex-col mt-11 mb-16 max-md:max-w-full max-md:my-10">
         <BreadCrumbs />
-        <div className="shadow bg-white self-center w-full mt-4 pl-7 pr-12 rounded-lg max-md:max-w-full max-md:px-5">
+        <div className="shadow bg-white self-center w-full mt-4 pl-7 pr-12 rounded-lg max-md:max-w-full ">
           <HealthCare />
         </div>
         <div className="self-center w-full mt-7 max-md:max-w-full">
           <Cases />
         </div>
         <div className="self-center w-full mt-6 pr-2.5 max-md:max-w-full">
-         <Map/>
+          <Map />
         </div>
         <div className="self-center w-full mt-6 pr-2.5 max-md:max-w-full">
           <LabTable />
