@@ -41,7 +41,7 @@ function Cases() {
             </div>
           </div>
           <div>
-            <div className="bg-dashboard_bg w-full p-4">Footer</div>
+            <div className="bg-dashboard_bg w-full p-4"></div>
           </div>
         </div>
 
