@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import Highcharts from "highcharts/highmaps";
-import HighchartsReact from "highcharts-react-official";
 
 function HighChartMap() {
   useEffect(() => {
@@ -52,7 +51,7 @@ function HighChartMap() {
     fetchDataAndInitializeChart();
   }, []);
 
-  return <div id="container" style={{ width: "80%", height: "500px" }}></div>;
+  return <div id="container"></div>;
 }
 
 export default HighChartMap;

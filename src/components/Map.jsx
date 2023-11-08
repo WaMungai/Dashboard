@@ -4,19 +4,24 @@ import HighChartMap from "./HighChartMap";
 
 function Map() {
   return (
-    <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
-      <div className="flex flex-col items-stretch w-[68%] max-md:w-full max-md:ml-0">
-        <div className="text-slate-800 text-base font-semibold tracking-normal whitespace-nowrap ml-7 self-start max-md:ml-2.5">
-          Covid-19 Positive Cases by County
-          <div className="bg-slate-100 w-[804px] h-px mt-6 self-start max-md:max-w-full">
-            <div>
-              <HighChartMap />
-            </div>
+    <>
+      <div className="grid grid-cols-3 gap-4">
+        <div className="MapWrapper col-span-2 bg-white rounded-lg overflow-hidden">
+          <div className="py-4 px-4 font-semibold">
+            <h1> Covid-19 Positive Cases by County</h1>
+          </div>
+
+          <div className="border-b border-gray-200 pb-0"></div>
+
+          <div className=" to-dashboard_offwhite rounded-md shadow-sm p-4">
+            <HighChartMap />
           </div>
         </div>
+        <div className="StatesDataWrapper bg-white rounded-lg overflow-hidden">
+          <CountyTable />
+        </div>
       </div>
-      <CountyTable />
-    </div>
+    </>
   );
 }
 
