@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import HighCharts from "./HighCharts";
 
-
 function LabTable() {
   const [labData, setLabData] = useState([]);
 
@@ -20,41 +19,65 @@ function LabTable() {
   }, []);
 
   return (
-    <div className="flex flex-row items-stretch max-w-full max-md:flex-col max-md:w-full max-md:ml-0">
-  <div className="w-[33%] max-md:w-full max-md:ml-0">
-    <div className="flex-col justify-center items-center shadow overflow-hidden relative flex aspect-[1.0418848167539267] grow mt-6 py-7 max-md:mt-10">
-      <div className="relative flex w-[398px] max-w-full flex-col self-start">
-        <div className="text-slate-800 text-base font-semibold tracking-normal whitespace-nowrap ml-6 self-start max-md:ml-2.5">
-          Laboratories Leaderboard
-        </div>
-        <div className="bg-slate-100 w-full h-px mt-6 self-start" />
-      </div>
-      <div className="relative bg-slate-50 bg-opacity-50 flex w-[398px] max-w-full items-start justify-between gap-5 pl-7 pr-16 py-4 self-start max-md:px-5">
-        <div className="text-slate-400 text-xs font-semibold tracking-wider uppercase flex-1">
-          Laboratory
-        </div>
-        <div className="text-slate-400 text-xs font-semibold tracking-wider uppercase self-stretch">
-          Total Tests
-        </div>
-      </div>
-      {labData.map((lab) => (
-        <div
-          className="relative bg-slate-50 bg-opacity-50 self-stretch flex w-full items-start justify-between gap-5 pl-7 pr-6 py-4 max-md:px-5"
-          key={lab.lab}
-        >
-          <div className="text-black text-xs self-stretch">{lab.name}</div>
-          <div className="text-slate-800 text-right text-sm font-medium leading-5 tracking-normal self-start">
-            {lab.value}
+    <>
+      {/* Revised Designs  */}
+
+      <div class="grid grid-cols-3 gap-4">
+        <div class="LabBoardWrapper bg-white overflow-hidden rounded-lg">
+          <div className="py-4 px-4 font-semibold">
+            <h1>Laboratories Leaderboard</h1>
+          </div>
+          <div className="border-b border-gray-200 pb-0"></div>
+
+          <div className=" rounded-md shadow-sm ">
+            <div className="flex flex-col items-stretch ">
+              <div className="shadow overflow-hidden relative flex-grow ">
+                <div className="relative bg-slate-50 bg-opacity-50 self-stretch flex flex-col items-start gap-5 p-4 py-4 max-md:px-5">
+                  <div class="inline-block min-w-full py-2 align-middle">
+                    <table class="min-w-full divide-y divide-gray-300">
+                      <thead>
+                        <tr className=" uppercase text-xs">
+                          <th
+                            scope="col"
+                            class="py-3.5 pr-3 text-left text-sm font-semibold  "
+                          >
+                            LABORATORY
+                          </th>
+                          <th
+                            scope="col"
+                            class="px-3 py-3.5 text-right text-sm font-semibold "
+                          >
+                            TOTAL TESTS
+                          </th>
+                        </tr>
+                      </thead>
+
+                      <tbody className="divide-y">
+                        {labData.map((lab) => (
+                          <tr key={lab.lab}>
+                            <td className="py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0 ">
+                              {lab.name}
+                            </td>
+                            <td className=" px-3 py-4 text-sm text-gray-500 text-end">
+                              {lab.value}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      ))}
-    </div>
-  </div>
-  <div className="w-[67%] ml-5 max-md:w-full max-md:ml-0 pb-4">
-    <HighCharts />
-  </div>
-</div>
 
+        <div className="col-span-2 LabBoardWrapper bg-white overflow-hidden rounded-lg">
+          <div className="py-4 px-4 font-semibold">Covid-19 Cases</div>
+          <HighCharts />
+        </div>
+      </div>
+    </>
   );
 }
 

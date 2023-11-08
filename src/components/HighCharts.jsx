@@ -11,10 +11,9 @@ const HighCharts = () => {
         chart: {
           type: "column",
           height: 400,
-          
         },
         title: {
-          text: "Covid-19 Cases",
+          text: "",
           align: "left",
         },
         subtitle: {
@@ -51,9 +50,7 @@ const HighCharts = () => {
         tooltip: {
           valueSuffix: "",
         },
-        plotOptions: {
-          
-        },
+        plotOptions: {},
         series: [
           {
             name: "Positive",
