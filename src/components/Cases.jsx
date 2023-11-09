@@ -82,25 +82,18 @@ function Cases() {
             </div>
           </div>
           <div>
-            <div className="bg-dashboard_bg w-full p-4">
-              <div className="self-stretch flex items-start justify-between gap-0.5">
-                <div className="text-gray-500 text-xs font-bold leading-5 uppercase self-start">
-                  Males:
+          <div className="bg-dashboard_bg w-full p-4">
+              <div className="flex items-center gap-2 justify-evenly">
+                <div className="Left_stat w-1/2">
+                <p className="text-zinc-800 text-xs font-medium ">Males:  <span className="text-black"> 1,932</span></p>
+                  
                 </div>
-                <div className="text-zinc-800 text-xs font-medium leading-5 uppercase whitespace-nowrap self-start">
-                  <span className="text-black"> 1</span>
-                  <span className="text-zinc-800">,932</span>
-                </div>
-              </div>
-              <div className="self-stretch flex items-start justify-between gap-0.5">
-                <div className="text-gray-500 text-xs font-bold leading-5 uppercase self-stretch">
-                  Females:
-                </div>
-                <div className="text-gray-500 text-xs font-medium leading-5 uppercase self-stretch whitespace-nowrap">
-                  {" "}
-                  518
+                <div className="Right_stat">
+                <p className="text-zinc-800 text-xs font-medium "> Females::  <span className="text-black">518</span></p>
+
                 </div>
               </div>
+             
             </div>
           </div>
         </div>
@@ -143,23 +136,17 @@ function Cases() {
           </div>
           <div>
             <div className="bg-dashboard_bg w-full p-4">
-              <div className="self-stretch flex items-start justify-between gap-0.5">
-                <div className="text-gray-500 text-xs font-bold leading-5 uppercase self-start">
-                  Males:
+              <div className="flex items-center gap-2 justify-evenly">
+                <div className="Left_stat w-1/2">
+                <p className="text-zinc-800 text-xs font-medium ">Males:  <span className="text-black"> 42,054</span></p>
+                  
                 </div>
-                <div className="text-zinc-800 text-xs font-medium leading-5 uppercase whitespace-nowrap self-start">
-                  <span className="text-black"> 42,054</span>
-                </div>
-              </div>
-              <div className="self-stretch flex items-start justify-between gap-0.5">
-                <div className="text-gray-500 text-xs font-bold leading-5 uppercase self-stretch">
-                  Females:
-                </div>
-                <div className="text-gray-500 text-xs font-medium leading-5 uppercase self-stretch whitespace-nowrap">
-                  {" "}
-                  51,371
+                <div className="Right_stat">
+                <p className="text-zinc-800 text-xs font-medium "> Females::  <span className="text-black">51,371</span></p>
+
                 </div>
               </div>
+             
             </div>
           </div>
         </div>
